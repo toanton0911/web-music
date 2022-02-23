@@ -1,0 +1,31 @@
+:root {
+    --background-color: rgb(242, 244, 248);
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: rgb(35, 44, 50);
+    --sidebar-width: 60px;
+    --sidebar-logo-height: 65px;
+    --secondary-color: rgb(26, 182, 103);
+    --navbar-height: 65px;
+    --music-player-height: 60px;
+    --Mobile-tablet-menu__header-height: 65px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color)
+}
+
+
+

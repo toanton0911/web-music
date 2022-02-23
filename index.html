@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/grid_system.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>TMusik</title>
+<body>
+    <div class="app">
+        <nav class="sidebar hide-on-mobile-tablet">
+            <div class="sidebar__logo">
+                <div class="sidebar__logo-contain">
+                    <i class="fas fa-headphones sidebar__logo-icon"></i>
+                    <div class="sidebar__logo-name">TMusik</div>
+                </div>
+
+                <div class="sidebar__menu">
+                    <i class="ti-menu sidebar__menu-btn"></i>
+                    <i class="fas fa-angle-double-left sidebar__menu-btn-active"></i>
+                </div>
+            </div>
+
+            <div class="sidebar__container">
+                <ul class="sidebar__list">
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__item-link">
+                            <i class="fas fa-home sidebar__item-icon"></i>
+                            <span class="sidebar__item-link-text">Home</span>
+                        </a>
+                        <a href='#' class="sidebar__item-description">
+                            <span>
+                                Home
+                            </span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__item-link">
+                            <i class="ti-new-window sidebar__item-icon"></i>
+                            <span class="sidebar__item-link-text">Discover</span>
+                        </a>
+                        <a href='#' class="sidebar__item-description">
+                            <span>
+                                Discover
+                            </span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__item-link">
+                            <i class="fas fa-plus-circle sidebar__item-icon"></i>
+                            <span class="sidebar__item-link-text">New</span>    
+                        </a>
+                        <a href="#" class="sidebar__item-description">
+                            <span>
+                                New
+                            </span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__item-link">
+                            <i class="fas fa-compact-disc sidebar__item-icon"></i>
+                            <span class="sidebar__item-link-text">Listen</span>
+                        </a>
+                        <a href="#" class="sidebar__item-description">
+                            <span>
+                                Listen
+                            </span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item" id="sidebar-options">
+                        <a href="#" class="sidebar__item-link">
+                            <i class="ti-settings sidebar__item-icon"></i>
+                            <span class="sidebar__item-link-text">Options</span>
+                        </a>                        
+                        <div class="options-menu options-menu--hidden">
+                            <ul class="options-menu__body">
+                                <li class="options-menu__item">
+                                    <a href="#" class="options-menu__link">
+                                        <i class="ti-settings options-menu__link-icon"></i>
+                                        Settings
+                                    </a>
+                                </li>
+                                <li class="options-menu__item">
+                                    <a href="#" class="options-menu__link">
+                                        <i class="fas fa-flag  options-menu__link-icon"></i>
+                                        Report
+                                    </a>
+                                </li>
+                                <li class="options-menu__item">
+                                    <a href="#" class="options-menu__link">
+                                        <i class="far fa-question-circle  options-menu__link-icon"></i>
+                                        Helps
+                                    </a>
+                                </li>
+                                <li class="options-menu__item">
+                                    <a href="#" class="options-menu__link">
+                                        <i class="far fa-comment-dots  options-menu__link-icon"></i>
+                                        Feedback
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="options-menu__log-out">
+                                <p>Log out</p>
+                            </div>
+                        </div>
+
+                        <a href="#" class="sidebar__item-description">
+                            <span>
+                                Options
+                            </span>
+                        </a>    
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="main-body">
+            <!-- Navbar -->
+            <div class="navbar">
+
+                <div class="Mobile-tablet-sidebar">
+                    <i class="ti-menu Mobile-tablet-sidebar__btn"></i>
+                </div>
+
+                <div class="Mobile-tablet-menu-container">
+                    <div class="Mobile-tablet-menu-overlay">
+                        
+                    </div>
+
+                    <div class="Mobile-tablet-menu">
+                        <div class="Mobile-tablet-menu__header">
+                            <div class="Mobile-tablet__header-logo">
+                                <i class="fas fa-headphones Mobile-tablet__header-logo-icon"></i>
+                                <div class="Mobile-tablet__header-logo-name">TMusik</div>
+                            </div>
+
+                            <div class="Mobile-tablet-menu__exit">
+                                <i class="ti-close Mobile-tablet-menu__exit-btn"></i>
+                            </div>
+                        </div>
+
+                        <ul class="Mobile-tablet-menu__list">
+                            <li class="Mobile-tablet-menu__item">
+                                <a href="#" class="Mobile-tablet-menu__link">
+                                    <i class="fas fa-home Mobile-tablet-menu__item-icon"></i>
+                                    <span class="Mobile-tablet-menu__item-text">Home</span>
+                                </a>
+                            </li>
+                            <li class="Mobile-tablet-menu__item">
+                                <a href="#" class="Mobile-tablet-menu__link">
+                                    <i class="ti-new-window Mobile-tablet-menu__item-icon"></i>
+                                    <span class="Mobile-tablet-menu__item-text">Discover</span>
+                                </a>
+                            </li>
+                            <li class="Mobile-tablet-menu__item">
+                                <a href="#" class="Mobile-tablet-menu__link">
+                                    <i class="fas fa-plus-circle Mobile-tablet-menu__item-icon"></i>
+                                    <span class="Mobile-tablet-menu__item-text">New</span>
+                                </a>
+                            </li>
+                            <li class="Mobile-tablet-menu__item">
+                                <a href="#" class="Mobile-tablet-menu__link">
+                                    <i class="fas fa-compact-disc Mobile-tablet-menu__item-icon"></i>
+                                    <span class="Mobile-tablet-menu__item-text">Listen</span>
+                                </a>
+                            </li>
+                            <li class="Mobile-tablet-menu__item">
+                                <a href="#" class="Mobile-tablet-menu__link">
+                                    <i class="ti-settings Mobile-tablet-menu__item-icon"></i>
+                                    <span class="Mobile-tablet-menu__item-text">Setting</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <ul class="navbar__list hide-on-mobile-tablet">
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__item-link">Song</a>
+                        <div class="navbar__sub-item">
+                            <ul class="sub-item__list">
+                                <h3>Việt Nam</h3>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Pop</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Rap</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Remix</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Acoustic</a>
+                                </li>
+                            </ul>
+                            <ul class="sub-item__list">
+                                <h3>US/UK</h3>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Pop</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Rap</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Remix</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Acoustic</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Latin</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">EDM</a>
+                                </li>
+                            </ul>
+                            <ul class="sub-item__list">
+                                <h3>Korea</h3>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">KPop</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Rap</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Remix</a>
+                                </li>
+                            </ul>
+                            <ul class="sub-item__list">
+                                <h3>Others</h3>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">No beat</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Beat</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Cover</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__item-link">Playlist</a>
+                        <div class="navbar__sub-item">
+                            <ul class="sub-item__list">
+                                <h3>Việt Nam</h3>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Pop</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Rap</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Remix</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Acoustic</a>
+                                </li>
+                            </ul>
+                            <ul class="sub-item__list">
+                                <h3>US/UK</h3>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Pop</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Rap</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Remix</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Rock</a>
+                                </li>
+                            </ul>
+                            <ul class="sub-item__list">
+                                <h3>Korea</h3>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">KPop</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Rap</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Remix</a>
+                                </li>
+                            </ul>
+                            <ul class="sub-item__list">
+                                <h3>Others</h3>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">No beat</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Beat</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Cover</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__item-link">Collections</a>
+                        <div class="navbar__sub-item">
+                            <ul class="sub-item__list">
+                                <h3>Type</h3>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Vpop</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">USUK</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">KPOP</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">China</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">No Beat</a>
+                                </li>
+                            </ul>
+                            <ul class="sub-item__list">
+                                <h3>Emotions</h3>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Happy</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Sad</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Chill</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Relax</a>
+                                </li>
+                            </ul>
+                            <ul class="sub-item__list">
+                                <h3>Background</h3>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Cafe</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Bar</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Workout</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Romantic</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Rain</a>
+                                </li>
+                            </ul>
+                            <ul class="sub-item__list">
+                                <h3>Topics</h3>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Love</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Top 100</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Weekend</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Chill Out</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Mashup</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__item-link">Chart</a>
+                        <div class="navbar__sub-item navbar__sub-item--small">
+                            <ul class="sub-item__list">
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Vpop</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">USUK</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">KPOP</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__item-link">
+                            <i class="ti-more"></i>
+                        </a>
+                        <div class="navbar__sub-item navbar__sub-item--small">
+                            <ul class="sub-item__list">
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Discorvery</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">Artists</a>
+                                </li>
+                                <li class="sub-item__item">
+                                    <a class="sub-item__link" href="#">News</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Navbar-search -->
+
+                <div class="navbar__search">
+                    <i class="ti-search navbar__search-icon"></i>
+                    <input class="navbar__search-input" type="text" placeholder="Search songs, albums,...">
+                </div>
+
+                <div class="navbar__register">
+                    <div class="register__notification">
+                        <i class="ti-bell register__notification-icon"></i>
+                        <div class="register__notification-info register__notification-info--has-noti">
+                            <div class="notification__no-noti">You have no notification</div>
+                            <div class="register__notification-info__noti">
+                                <header class="register__notification-info-header">
+                                    <h3>You have <span>4</span> notifications</h3>
+                                </header>
+                                <ul class="notification__list">
+                                    <li class="notification__item notification__item--checked">
+                                        <a href="#" class="notification__item-link">
+                                            <img class="notification__item-img" src="./assets/img/notification-mail-icon.png" alt="">
+                                            <div class="notification__item-description">
+                                                <p class="notification__item-message">User #3033 sends you a message</p>
+                                                <span class="notification__item-time">1 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notification__item">
+                                        <a href="#" class="notification__item-link">
+                                            <img class="notification__item-img" src="./assets/img/notification-mail-icon.png" alt="">
+                                            <div class="notification__item-description">
+                                                <p class="notification__item-message">User #3033 sends you a message</p>
+                                                <span class="notification__item-time">1 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notification__item">
+                                        <a href="#" class="notification__item-link">
+                                            <img class="notification__item-img" src="./assets/img/notification-mail-icon.png" alt="">
+                                            <div class="notification__item-description">
+                                                <p class="notification__item-message">User #3033 sends you a message</p>
+                                                <span class="notification__item-time">1 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notification__item">
+                                        <a href="#" class="notification__item-link">
+                                            <img class="notification__item-img" src="./assets/img/notification-mail-icon.png" alt="">
+                                            <div class="notification__item-description">
+                                                <p class="notification__item-message">User #3033 sends you a message</p>
+                                                <span class="notification__item-time">1 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notification__item">
+                                        <a href="#" class="notification__item-link">
+                                            <img class="notification__item-img" src="./assets/img/notification-mail-icon.png" alt="">
+                                            <div class="notification__item-description">
+                                                <p class="notification__item-message">User #3033 sends you a message</p>
+                                                <span class="notification__item-time">1 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notification__item">
+                                        <a href="#" class="notification__item-link">
+                                            <img class="notification__item-img" src="./assets/img/notification-mail-icon.png" alt="">
+                                            <div class="notification__item-description">
+                                                <p class="notification__item-message">User #3033 sends you a message</p>
+                                                <span class="notification__item-time">1 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notification__item">
+                                        <a href="#" class="notification__item-link">
+                                            <img class="notification__item-img" src="./assets/img/notification-mail-icon.png" alt="">
+                                            <div class="notification__item-description">
+                                                <p class="notification__item-message">User #3033 sends you a message</p>
+                                                <span class="notification__item-time">1 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="register__notification-info-footer">
+                                    <a href="#" class="register__notification-info-footer-see-all">
+                                        See all the notifications
+                                    </a>
+                                    <a href="#" class="register__notification-info-footer-btn">
+                                        <i class="ti-settings register__notification-info-footer-btn-icon"></i>
+                                    </a>
+                                </footer>             
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mobile-register__login">
+                        <i class="fas fa-user-circle mobile-register__login-btn"></i>
+                    </div>
+                    <div class="register__login hide-on-mobile">
+                        <a href ="#" class="register__login-login">Login</a> 
+                        <a href ="#" class="register__login-signup">Sign up</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="grid">
+                    <div class="row">
+                        <div class="col l-10 m-12 c-12">
+                            <div class="container__wrapper">
+                                <div class="discovery-songs">
+                                    <h3 class="discovery-songs__header">Discorver</h3>
+                                    <div class="discovery-songs__list">
+                                        <div class="row">
+                                            <div class="col l-2 m-3 c-6">
+                                                <div class="discovery-songs__item">
+                                                    <div class="discovery-songs__item-img" id="main-body-songs-img" style="background-image: url('https://avatar-ex-swe.nixcdn.com/playlist/2022/01/28/7/c/2/7/1643355678308_300.jpg')">
+                                                        <a href="#" class="discovery-songs__item-action">
+                                                            <i class="ti-control-play discovery-songs__item-action-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="discovery-songs__item-description">
+                                                        <a href="#" class="discovery-songs__item-description-link">Nhạc rap việt 2022</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-2 m-3 c-6">
+                                                <div class="discovery-songs__item">
+                                                    <div class="discovery-songs__item-img" id="main-body-songs-img" style="background-image: url('https://avatar-ex-swe.nixcdn.com/playlist/2022/01/28/7/c/2/7/1643357496126_300.jpg')">
+                                                        <a href="#" class="discovery-songs__item-action">
+                                                            <i class="ti-control-play discovery-songs__item-action-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="discovery-songs__item-description">
+                                                        <a href="#" class="discovery-songs__item-description-link">Nhạc USUK hot tháng 2</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-2 m-3 c-6">
+                                                <div class="discovery-songs__item">
+                                                    <div class="discovery-songs__item-img" id="main-body-songs-img" style="background-image: url('https://avatar-ex-swe.nixcdn.com/playlist/2021/11/26/0/b/4/0/1637901354131_300.jpg')">
+                                                        <a href="#" class="discovery-songs__item-action">
+                                                            <i class="ti-control-play discovery-songs__item-action-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="discovery-songs__item-description">
+                                                        <a href="#" class="discovery-songs__item-description-link">Tuyển Tập Nhạc Hay Miễn Phí</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-2 m-3 c-6">
+                                                <div class="discovery-songs__item">
+                                                    <div class="discovery-songs__item-img" id="main-body-songs-img" style="background-image: url('https://avatar-ex-swe.nixcdn.com/playlist/2022/01/10/7/3/2/3/1641796097174_300.jpg')">
+                                                        <a href="#" class="discovery-songs__item-action">
+                                                            <i class="ti-control-play discovery-songs__item-action-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="discovery-songs__item-description">
+                                                        <a href="#" class="discovery-songs__item-description-link">Favourite Pop Songs</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-2 m-3 c-6">
+                                                <div class="discovery-songs__item">
+                                                    <div class="discovery-songs__item-img" id="main-body-songs-img" style="background-image: url('https://avatar-ex-swe.nixcdn.com/playlist/2022/01/20/9/c/2/d/1642660004418_300.jpg')">
+                                                        <a href="#" class="discovery-songs__item-action">
+                                                            <i class="ti-control-play discovery-songs__item-action-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="discovery-songs__item-description">
+                                                        <a href="#" class="discovery-songs__item-description-link">GEN Z Nghe Gì</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-2 m-3 c-6">
+                                                <div class="discovery-songs__item">
+                                                    <div class="discovery-songs__item-img" id="main-body-songs-img" style="background-image: url('https://avatar-ex-swe.nixcdn.com/playlist/2021/10/28/4/a/9/e/1635399302001_300.jpg')">
+                                                        <a href="#" class="discovery-songs__item-action">
+                                                            <i class="ti-control-play discovery-songs__item-action-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="discovery-songs__item-description">
+                                                        <a href="#" class="discovery-songs__item-description-link">Hit Maker</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-2 m-3 c-6">
+                                                <div class="discovery-songs__item">
+                                                    <div class="discovery-songs__item-img" id="main-body-songs-img" style="background-image: url('https://avatar-ex-swe.nixcdn.com/playlist/2022/01/19/0/d/b/0/1642582007434_300.jpg')">
+                                                        <a href="#" class="discovery-songs__item-action">
+                                                            <i class="ti-control-play discovery-songs__item-action-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="discovery-songs__item-description">
+                                                        <a href="#" class="discovery-songs__item-description-link">VPOP 2022: Hot Comeback</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-2 m-3 c-6">
+                                                <div class="discovery-songs__item">
+                                                    <div class="discovery-songs__item-img" id="main-body-songs-img" style="background-image: url('https://avatar-ex-swe.nixcdn.com/playlist/2021/11/03/5/1/9/a/1635921829988_300.jpg')">
+                                                        <a href="#" class="discovery-songs__item-action">
+                                                            <i class="ti-control-play discovery-songs__item-action-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="discovery-songs__item-description">
+                                                        <a href="#" class="discovery-songs__item-description-link">VPOP 2022: Hot Stage</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-2 m-3 c-6">
+                                                <div class="discovery-songs__item">
+                                                    <div class="discovery-songs__item-img" id="main-body-songs-img" style="background-image: url('https://avatar-ex-swe.nixcdn.com/playlist/2022/01/24/d/0/a/7/1643013571425_300.jpg')">
+                                                        <a href="#" class="discovery-songs__item-action">
+                                                            <i class="ti-control-play discovery-songs__item-action-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="discovery-songs__item-description">
+                                                        <a href="#" class="discovery-songs__item-description-link">VPOP new Hits</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-2 m-3 c-6">
+                                                <div class="discovery-songs__item">
+                                                    <div class="discovery-songs__item-img" id="main-body-songs-img" style="background-image: url('https://avatar-ex-swe.nixcdn.com/playlist/2022/01/21/9/d/d/e/1642749578032_300.jpg')">
+                                                        <a href="#" class="discovery-songs__item-action">
+                                                            <i class="ti-control-play discovery-songs__item-action-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="discovery-songs__item-description">
+                                                        <a href="#" class="discovery-songs__item-description-link">Definitely Pop Songs</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-2 m-3 c-6">
+                                                <div class="discovery-songs__item">
+                                                    <div class="discovery-songs__item-img" id="main-body-songs-img" style="background-image: url('https://avatar-ex-swe.nixcdn.com/playlist/2021/10/21/a/6/4/4/1634810983310_300.jpg')">
+                                                        <a href="#" class="discovery-songs__item-action">
+                                                            <i class="ti-control-play discovery-songs__item-action-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="discovery-songs__item-description">
+                                                        <a href="#" class="discovery-songs__item-description-link">Pop Top</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-2 m-3 c-6">
+                                                <div class="discovery-songs__item">
+                                                    <div class="discovery-songs__item-img" id="main-body-songs-img" style="background-image: url('https://avatar-ex-swe.nixcdn.com/playlist/2022/01/26/a/0/5/0/1643183012152_300.jpg')">
+                                                        <a href="#" class="discovery-songs__item-action">
+                                                            <i class="ti-control-play discovery-songs__item-action-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="discovery-songs__item-description">
+                                                        <a href="#" class="discovery-songs__item-description-link">V-POP Today's Top Hits</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col l-7 m-12 c-12">
+                                        <div class="new-songs">
+                                            <h3 class="new-songs__header">New Songs</h3>
+                                            <div class="new-songs__list">
+                                                <div class="row">
+                                                    <div class="col l-3 m-3 c-6">
+                                                        <div class="new-songs__item">
+                                                            <div class="new-songs__item-img" style="background-image: url(https://avatar-ex-swe.nixcdn.com/song/2022/01/12/f/c/b/f/1641968755745_300.jpg)">
+                                                                <a href="#" class="new-songs__item-action">
+                                                                    <i class="ti-control-play new-songs__item-action-icon"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="new-songs__item-description">
+                                                                <a href="#" class="new-songs__item-title">Có em đây</a>
+                                                                <a href="#" class="new-songs__item-artist">Như Việt, Dung Hoàng Phạm</a> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col l-3 m-3 c-6">
+                                                        <div class="new-songs__item">
+                                                            <div class="new-songs__item-img" style="background-image: url(https://avatar-ex-swe.nixcdn.com/song/2022/01/21/2/e/e/8/1642736612035_300.jpg)">
+                                                                <a href="#" class="new-songs__item-action">
+                                                                    <i class="ti-control-play new-songs__item-action-icon"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="new-songs__item-description">
+                                                                <a href="#" class="new-songs__item-title">Bảy anh em</a>
+                                                                <a href="#" class="new-songs__item-artist">Bảy Anh Em - Minh Huy, Pjnboys, Phức Hợp Hood</a> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col l-3 m-3 c-6">
+                                                        <div class="new-songs__item">
+                                                            <div class="new-songs__item-img" style="background-image: url(https://avatar-ex-swe.nixcdn.com/song/2022/01/07/2/5/8/e/1641552284040_300.jpg)">
+                                                                <a href="#" class="new-songs__item-action">
+                                                                    <i class="ti-control-play new-songs__item-action-icon"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="new-songs__item-description">
+                                                                <a href="#" class="new-songs__item-title">Ngày em đi</a>
+                                                                <a href="#" class="new-songs__item-artist">Khoa</a> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col l-3 m-3 c-6">
+                                                        <div class="new-songs__item">
+                                                            <div class="new-songs__item-img" style="background-image: url(https://avatar-ex-swe.nixcdn.com/song/2022/01/13/4/f/a/f/1642042253444_300.jpg)">
+                                                                <a href="#" class="new-songs__item-action">
+                                                                    <i class="ti-control-play new-songs__item-action-icon"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="new-songs__item-description">
+                                                                <a href="#" class="new-songs__item-title">Còn thở là còn gỡ</a>
+                                                                <a href="#" class="new-songs__item-artist">Phương Mỹ Chi, Erik, RTee</a> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col l-3 m-3 c-6">
+                                                        <div class="new-songs__item">
+                                                            <div class="new-songs__item-img" style="background-image: url(https://avatar-ex-swe.nixcdn.com/song/2021/12/04/2/5/4/4/1638606450835_300.jpg)">
+                                                                <a href="#" class="new-songs__item-action">
+                                                                    <i class="ti-control-play new-songs__item-action-icon"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="new-songs__item-description">
+                                                                <a href="#" class="new-songs__item-title">Tôi đã quên thật rồi</a>
+                                                                <a href="#" class="new-songs__item-artist">Isaac</a> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col l-3 m-3 c-6">
+                                                        <div class="new-songs__item">
+                                                            <div class="new-songs__item-img" style="background-image: url(https://avatar-ex-swe.nixcdn.com/playlist/2022/02/07/8/a/9/2/1644214046999_300.jpg)">
+                                                                <a href="#" class="new-songs__item-action">
+                                                                    <i class="ti-control-play new-songs__item-action-icon"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="new-songs__item-description">
+                                                                <a href="#" class="new-songs__item-title">Marry Me (Original Motion Picture Soundtrack) - Jennifer Lopez, Maluma</a>
+                                                                <a href="#" class="new-songs__item-artist">Jennifer Lopez, Maluma</a> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col l-3 m-3 c-6">
+                                                        <div class="new-songs__item">
+                                                            <div class="new-songs__item-img" style="background-image: url(https://avatar-ex-swe.nixcdn.com/playlist/2022/01/28/7/c/2/7/1643346296834_300.jpg)">
+                                                                <a href="#" class="new-songs__item-action">
+                                                                    <i class="ti-control-play new-songs__item-action-icon"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="new-songs__item-description">
+                                                                <a href="#" class="new-songs__item-title">Pink Moon</a>
+                                                                <a href="#" class="new-songs__item-artist">Pink Sweat$</a> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col l-3 m-3 c-6">
+                                                        <div class="new-songs__item">
+                                                            <div class="new-songs__item-img" style="background-image: url(https://avatar-ex-swe.nixcdn.com/playlist/2022/01/26/a/0/5/0/1643177758754_300.jpg)">
+                                                                <a href="#" class="new-songs__item-action">
+                                                                    <i class="ti-control-play new-songs__item-action-icon"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="new-songs__item-description">
+                                                                <a href="#" class="new-songs__item-title">No Rain, No Flowers</a>
+                                                                <a href="#" class="new-songs__item-artist">Sabrina Claudio</a> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col l-5 m-12 c-12">
+                                        <div class="top-songs">
+                                            <div class="top-songs__header">
+                                                <h3>Top Songs</h3>
+                                                <div class="top-songs__region">
+                                                    <button class="top-songs__region-btn top-songs__region-btn--active">VPOP</button>
+                                                    <button class="top-songs__region-btn">KPOP</button>
+                                                    <button class="top-songs__region-btn">US/UK</button>
+                                                </div>
+                                            </div>
+
+                                            <ul class="top-songs__list">
+                                                <li class="top-songs__items">
+                                                    <a href="#" class="top-songs__link">
+                                                        <div class="top-songs__items-ava" style="background-image: url(https://avatar-ex-swe.nixcdn.com/mv/2021/04/07/d/f/e/8/1617784916622_536.jpg)"></div>
+                                                        <div class="top-songs__items-description">
+
+                                                            <div class="top-songs__items-info">
+                                                                <h4 class="top-songs__items-title">Yêu Thầm</h4>
+                                                                <h5 class="top-songs__items-singer">Hoàng Yến ChiBi</h5>
+                                                            </div>  
+
+                                                            <div class="top-songs__items-ranking">
+                                                                <p>1</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="top-songs__items">
+                                                    <a href="#" class="top-songs__link">
+                                                        <div class="top-songs__items-ava" style="background-image: url(https://avatar-ex-swe.nixcdn.com/mv/2021/04/27/f/3/8/f/1619516817597.jpg)"></div>
+                                                        <div class="top-songs__items-description">
+
+                                                            <div class="top-songs__items-info">
+                                                                <h4 class="top-songs__items-title">Đừng hẹn kiếp sau</h4>
+                                                                <h5 class="top-songs__items-singer">Đình Dũng</h5>
+                                                            </div>  
+
+                                                            <div class="top-songs__items-ranking">
+                                                                <p>2</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="top-songs__items">
+                                                    <a href="#" class="top-songs__link">
+                                                        <div class="top-songs__items-ava" style="background-image: url(https://avatar-ex-swe.nixcdn.com/mv/2021/06/12/5/0/f/7/1623492078829.jpg)"></div>
+                                                        <div class="top-songs__items-description">
+
+                                                            <div class="top-songs__items-info">
+                                                                <h4 class="top-songs__items-title">Tình yêu ngủ quên</h4>
+                                                                <h5 class="top-songs__items-singer">Hoàng Tôn Lý Hân</h5>
+                                                            </div>  
+
+                                                            <div class="top-songs__items-ranking">
+                                                                <p>3</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="top-songs__items">
+                                                    <a href="#" class="top-songs__link">
+                                                        <div class="top-songs__items-ava" style="background-image: url(https://avatar-ex-swe.nixcdn.com/mv/2021/10/26/e/8/5/1/1635226239072.jpg)"></div>
+                                                        <div class="top-songs__items-description">
+
+                                                            <div class="top-songs__items-info">
+                                                                <h4 class="top-songs__items-title">Mắt Nai Cha Cha Cha  (MoodShow The 2nd Show) (Music Video)</h4>
+                                                                <h5 class="top-songs__items-singer">Bảo Anh</h5>
+                                                            </div>  
+
+                                                            <div class="top-songs__items-ranking">
+                                                                <p>4</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="top-songs__items">
+                                                    <a href="#" class="top-songs__link">
+                                                        <div class="top-songs__items-ava" style="background-image: url(https://avatar-ex-swe.nixcdn.com/mv/2021/01/28/4/5/c/e/1611807985868.jpg)"></div>
+                                                        <div class="top-songs__items-description">
+
+                                                            <div class="top-songs__items-info">
+                                                                <h4 class="top-songs__items-title">Về nhà em nuôi</h4>
+                                                                <h5 class="top-songs__items-singer">Linh Barbie</h5>
+                                                            </div>  
+
+                                                            <div class="top-songs__items-ranking">
+                                                                <p>5</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="MV-section">
+                                    <h4 class="MV__header">MV Hot</h4>
+            
+                                    <div class="MV__container">
+                                        <a href="#" class="MV__item MV__item-1" style="background-image: url(https://avatar-ex-swe.nixcdn.com/mv/2021/07/14/1/4/5/f/1626252020974_640.jpg)">
+                                            <div class="MV__description">
+                                                <span class="MV__description-watcher">
+                                                    <i class="far fa-eye MV__description-watcher-icon"></i>
+                                                    30000
+                                                </span>
+            
+                                                <div class="MV__description-info">
+                                                    <h5 class="MV__description-title">Thức Giấc</h5>
+                                                    <h6 class="MV__description-singer">Da LAB</h6>
+                                                </div>
+            
+                                                <div class="MV__description-time">
+                                                    <span>05:17</span>
+                                                </div>
+                                            </div>
+            
+                                            <div class="MV__item-hover">
+                                                <div class="MV__item-hover-icon">
+                                                    <i class="fas fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+            
+                                        <a href="#" class="MV__item MV__item-2" style="background-image: url(https://avatar-ex-swe.nixcdn.com/mv/2021/02/04/b/f/9/1/1612423114203_640.jpg)">
+                                            <div class="MV__description">
+                                                <span class="MV__description-watcher">
+                                                    <i class="far fa-eye MV__description-watcher-icon"></i>
+                                                    27017
+                                                </span>
+            
+                                                <div class="MV__description-info">
+                                                    <h5 class="MV__description-title">Right</h5>
+                                                    <h6 class="MV__description-singer">Niz</h6>
+                                                </div>
+            
+                                                <div class="MV__description-time">
+                                                    <span>02:47</span>
+                                                </div>
+                                            </div>
+            
+                                            <div class="MV__item-hover">
+                                                <div class="MV__item-hover-icon">
+                                                    <i class="fas fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="MV__item" style="background-image: url(https://avatar-ex-swe.nixcdn.com/mv/2021/07/06/6/0/7/3/1625556712491_268.jpg)">
+                                            <div class="MV__description">
+                                                <span class="MV__description-watcher">
+                                                    <i class="far fa-eye MV__description-watcher-icon"></i>
+                                                    35469
+                                                </span>
+            
+                                                <div class="MV__description-info">
+                                                    <h5 class="MV__description-title">Trắc trở </h5>
+                                                    <h6 class="MV__description-singer">X2X</h6>
+                                                </div>
+            
+                                                <div class="MV__description-time">
+                                                    <span>03:37</span>
+                                                </div>
+                                            </div>
+            
+                                            <div class="MV__item-hover">
+                                                <div class="MV__item-hover-icon">
+                                                    <i class="fas fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="MV__item" style="background-image: url(https://avatar-ex-swe.nixcdn.com/mv/2021/02/06/1/9/4/c/1612619982905_268.jpg)">
+                                            <div class="MV__description">
+                                                <span class="MV__description-watcher">
+                                                    <i class="far fa-eye MV__description-watcher-icon"></i>
+                                                    21690
+                                                </span>
+            
+                                                <div class="MV__description-info">
+                                                    <h5 class="MV__description-title">Dẹp chuyện buồn 1 bên</h5>
+                                                    <h6 class="MV__description-singer">Đạt G</h6>
+                                                </div>
+            
+                                                <div class="MV__description-time">
+                                                    <span>04:07</span>
+                                                </div>
+                                            </div>
+            
+                                            <div class="MV__item-hover">
+                                                <div class="MV__item-hover-icon">
+                                                    <i class="fas fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="MV__item" style="background-image: url(https://avatar-ex-swe.nixcdn.com/mv/2021/02/18/b/9/0/2/1613646056559_268.jpg)">
+                                            <div class="MV__description">
+                                                <span class="MV__description-watcher">
+                                                    <i class="far fa-eye MV__description-watcher-icon"></i>
+                                                    8665
+                                                </span>
+            
+                                                <div class="MV__description-info">
+                                                    <h5 class="MV__description-title">Fall In Love</h5>
+                                                    <h6 class="MV__description-singer">MC Wiz, YoungB</h6>
+                                                </div>
+            
+                                                <div class="MV__description-time">
+                                                    <span>05:17</span>
+                                                </div>
+                                            </div>
+            
+                                            <div class="MV__item-hover">
+                                                <div class="MV__item-hover-icon">
+                                                    <i class="fas fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="MV__item" style="background-image: url(https://avatar-ex-swe.nixcdn.com/mv/2021/06/30/8/9/6/c/1625047360106_268.jpg)">
+                                            <div class="MV__description">
+                                                <span class="MV__description-watcher">
+                                                    <i class="far fa-eye MV__description-watcher-icon"></i>
+                                                    19833
+                                                </span>
+            
+                                                <div class="MV__description-info">
+                                                    <h5 class="MV__description-title">Danh Phận</h5>
+                                                    <h6 class="MV__description-singer">Jang Mi</h6>
+                                                </div>
+            
+                                                <div class="MV__description-time">
+                                                    <span>05:14</span>
+                                                </div>
+                                            </div>
+            
+                                            <div class="MV__item-hover">
+                                                <div class="MV__item-hover-icon">
+                                                    <i class="fas fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="MV__item" style="background-image: url(https://avatar-ex-swe.nixcdn.com/mv/2021/09/10/6/3/e/8/1631271404598_268.jpg)">
+                                            <div class="MV__description">
+                                                <span class="MV__description-watcher">
+                                                    <i class="far fa-eye MV__description-watcher-icon"></i>
+                                                    1362
+                                                </span>
+            
+                                                <div class="MV__description-info">
+                                                    <h5 class="MV__description-title">Shivers</h5>
+                                                    <h6 class="MV__description-singer">Ed Sheeran</h6>
+                                                </div>
+            
+                                                <div class="MV__description-time">
+                                                    <span>03:57</span>
+                                                </div>
+                                            </div>
+            
+                                            <div class="MV__item-hover">
+                                                <div class="MV__item-hover-icon">
+                                                    <i class="fas fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="MV__item" style="background-image: url(https://avatar-ex-swe.nixcdn.com/mv/2021/09/10/6/3/e/8/1631271410920_268.jpg)">
+                                            <div class="MV__description">
+                                                <span class="MV__description-watcher">
+                                                    <i class="far fa-eye MV__description-watcher-icon"></i>
+                                                    1851
+                                                </span>
+            
+                                                <div class="MV__description-info">
+                                                    <h5 class="MV__description-title">Simple Times</h5>
+                                                    <h6 class="MV__description-singer">Kacey Musgraves</h6>
+                                                </div>
+            
+                                                <div class="MV__description-time">
+                                                    <span>05:17</span>
+                                                </div>
+                                            </div>
+            
+                                            <div class="MV__item-hover">
+                                                <div class="MV__item-hover-icon">
+                                                    <i class="fas fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="MV__item" style="background-image: url(https://avatar-ex-swe.nixcdn.com/mv/2021/09/02/4/a/e/5/1630556726751_268.jpg)">
+                                            <div class="MV__description">
+                                                <span class="MV__description-watcher">
+                                                    <i class="far fa-eye MV__description-watcher-icon"></i>
+                                                    10210
+                                                </span>
+            
+                                                <div class="MV__description-info">
+                                                    <h5 class="MV__description-title">Hạnh Phúc Là Khi... </h5>
+                                                    <h6 class="MV__description-singer">Jun Phạm</h6>
+                                                </div>
+            
+                                                <div class="MV__description-time">
+                                                    <span>05:17</span>
+                                                </div>
+                                            </div>
+            
+                                            <div class="MV__item-hover">
+                                                <div class="MV__item-hover-icon">
+                                                    <i class="fas fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="MV__item" style="background-image: url(https://avatar-ex-swe.nixcdn.com/mv/2021/06/10/d/8/8/a/1623320275417_268.jpg)">
+                                            <div class="MV__description">
+                                                <span class="MV__description-watcher">
+                                                    <i class="far fa-eye MV__description-watcher-icon"></i>
+                                                    20000
+                                                </span>
+            
+                                                <div class="MV__description-info">
+                                                    <h5 class="MV__description-title">Mê Chữ Ê Ê Ê</h5>
+                                                    <h6 class="MV__description-singer">Jena (Việt Nam), 24D.Bofie</h6>
+                                                </div>
+            
+                                                <div class="MV__description-time">
+                                                    <span>05:17</span>
+                                                </div>
+                                            </div>
+            
+                                            <div class="MV__item-hover">
+                                                <div class="MV__item-hover-icon">
+                                                    <i class="fas fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="tablet-mobile-message">
+                                    <h3 class="message__header">Connected</h3>
+
+                                    <div class="message__search">
+                                        <input type="text" placeholder="Search User" class="message__search-input">
+                                        <button class="message__search-btn">Search</button>
+                                    </div>
+
+                                    <ul class="message__list">
+                                        <li class="message__item">
+                                            <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                                <div class="user__status user__status--active"></div>
+                                            </div>
+                                            <div class="message__user-info">
+                                                <a href="#"class="message__user-name">Toàn Tôn</a>
+                                            </div>
+                                        </li>
+                                        <li class="message__item">
+                                            <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                                <div class="user__status user__status--busy"></div>
+                                            </div>
+                                            <div class="message__user-info">
+                                                <a href="#"class="message__user-name">Toàn Tôn</a>
+                                            </div>
+                                        </li>
+                                        <li class="message__item">
+                                            <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                                <div class="user__status user__status--waiting"></div>
+                                            </div>
+                                            <div class="message__user-info">
+                                                <a href="#"class="message__user-name">Toàn Tôn</a>
+                                            </div>
+                                        </li>
+                                        <li class="message__item">
+                                            <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                                <div class="user__status user__status--offline"></div>
+                                            </div>
+                                            <div class="message__user-info">
+                                                <a href="#"class="message__user-name">Toàn Tôn</a>
+                                            </div>
+                                        </li>
+                                        <li class="message__item">
+                                            <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                                <div class="user__status user__status--active"></div>
+                                            </div>
+                                            <div class="message__user-info">
+                                                <a href="#"class="message__user-name">Toàn Tôn</a>
+                                            </div>
+                                        </li>
+                                        <li class="message__item">
+                                            <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                                <div class="user__status user__status--active"></div>
+                                            </div>
+                                            <div class="message__user-info">
+                                                <a href="#"class="message__user-name">Toàn Tôn</a>
+                                            </div>
+                                        </li>
+                                        <li class="message__item">
+                                            <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                                <div class="user__status user__status--active"></div>
+                                            </div>
+                                            <div class="message__user-info">
+                                                <a href="#"class="message__user-name">Toàn Tôn</a>
+                                            </div>
+                                        </li>
+                                        <li class="message__item">
+                                            <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                                <div class="user__status user__status--active"></div>
+                                            </div>
+                                            <div class="message__user-info">
+                                                <a href="#"class="message__user-name">Toàn Tôn</a>
+                                            </div>
+                                        </li>
+                                        <li class="message__item">
+                                            <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                                <div class="user__status user__status--active"></div>
+                                            </div>
+                                            <div class="message__user-info">
+                                                <a href="#"class="message__user-name">Toàn Tôn</a>
+                                            </div>
+                                        </li>
+                                        <li class="message__item">
+                                            <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                                <div class="user__status user__status--active"></div>
+                                            </div>
+                                            <div class="message__user-info">
+                                                <a href="#"class="message__user-name">Toàn Tôn</a>
+                                            </div>
+                                        </li>
+                                        <li class="message__item">
+                                            <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                                <div class="user__status user__status--active"></div>
+                                            </div>
+                                            <div class="message__user-info">
+                                                <a href="#"class="message__user-name">Toàn Tôn</a>
+                                            </div>
+                                        </li>
+                                        <li class="message__item">
+                                            <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                                <div class="user__status user__status--active"></div>
+                                            </div>
+                                            <div class="message__user-info">
+                                                <a href="#"class="message__user-name">Toàn Tôn</a>
+                                            </div>
+                                        </li>
+                                        <li class="message__item">
+                                            <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                                <div class="user__status user__status--active"></div>
+                                            </div>
+                                            <div class="message__user-info">
+                                                <a href="#"class="message__user-name">Toàn Tôn</a>
+                                            </div>
+                                        </li>
+                                        <li class="message__item">
+                                            <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                                <div class="user__status user__status--active"></div>
+                                            </div>
+                                            <div class="message__user-info">
+                                                <a href="#"class="message__user-name">Toàn Tôn</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-2 m-0 c-0">
+                            <div class="message">
+                                <h3 class="message__header">Connected</h3>
+
+                                <div class="message__search">
+                                    <input type="text" placeholder="Search User" class="message__search-input">
+                                    <button class="message__search-btn">Search</button>
+                                </div>
+                                <ul class="message__list">
+                                    <li class="message__item">
+                                        <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                            <div class="user__status user__status--active"></div>
+                                        </div>
+                                        <div class="message__user-info">
+                                            <a href="#"class="message__user-name">Toàn Tôn</a>
+                                        </div>
+                                    </li>
+                                    <li class="message__item">
+                                        <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                            <div class="user__status user__status--busy"></div>
+                                        </div>
+                                        <div class="message__user-info">
+                                            <a href="#"class="message__user-name">Toàn Tôn</a>
+                                        </div>
+                                    </li>
+                                    <li class="message__item">
+                                        <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                            <div class="user__status user__status--waiting"></div>
+                                        </div>
+                                        <div class="message__user-info">
+                                            <a href="#"class="message__user-name">Toàn Tôn</a>
+                                        </div>
+                                    </li>
+                                    <li class="message__item">
+                                        <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                            <div class="user__status user__status--offline"></div>
+                                        </div>
+                                        <div class="message__user-info">
+                                            <a href="#"class="message__user-name">Toàn Tôn</a>
+                                        </div>
+                                    </li>
+                                    <li class="message__item">
+                                        <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                            <div class="user__status user__status--active"></div>
+                                        </div>
+                                        <div class="message__user-info">
+                                            <a href="#"class="message__user-name">Toàn Tôn</a>
+                                        </div>
+                                    </li>
+                                    <li class="message__item">
+                                        <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                            <div class="user__status user__status--active"></div>
+                                        </div>
+                                        <div class="message__user-info">
+                                            <a href="#"class="message__user-name">Toàn Tôn</a>
+                                        </div>
+                                    </li>
+                                    <li class="message__item">
+                                        <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                            <div class="user__status user__status--active"></div>
+                                        </div>
+                                        <div class="message__user-info">
+                                            <a href="#"class="message__user-name">Toàn Tôn</a>
+                                        </div>
+                                    </li>
+                                    <li class="message__item">
+                                        <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                            <div class="user__status user__status--active"></div>
+                                        </div>
+                                        <div class="message__user-info">
+                                            <a href="#"class="message__user-name">Toàn Tôn</a>
+                                        </div>
+                                    </li>
+                                    <li class="message__item">
+                                        <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                            <div class="user__status user__status--active"></div>
+                                        </div>
+                                        <div class="message__user-info">
+                                            <a href="#"class="message__user-name">Toàn Tôn</a>
+                                        </div>
+                                    </li>
+                                    <li class="message__item">
+                                        <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                            <div class="user__status user__status--active"></div>
+                                        </div>
+                                        <div class="message__user-info">
+                                            <a href="#"class="message__user-name">Toàn Tôn</a>
+                                        </div>
+                                    </li>
+                                    <li class="message__item">
+                                        <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                            <div class="user__status user__status--active"></div>
+                                        </div>
+                                        <div class="message__user-info">
+                                            <a href="#"class="message__user-name">Toàn Tôn</a>
+                                        </div>
+                                    </li>
+                                    <li class="message__item">
+                                        <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                            <div class="user__status user__status--active"></div>
+                                        </div>
+                                        <div class="message__user-info">
+                                            <a href="#"class="message__user-name">Toàn Tôn</a>
+                                        </div>
+                                    </li>
+                                    <li class="message__item">
+                                        <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                            <div class="user__status user__status--active"></div>
+                                        </div>
+                                        <div class="message__user-info">
+                                            <a href="#"class="message__user-name">Toàn Tôn</a>
+                                        </div>
+                                    </li>
+                                    <li class="message__item">
+                                        <div class="message__user-ava" style="background-image: url(./assets/img/user-img.png)">
+                                            <div class="user__status user__status--active"></div>
+                                        </div>
+                                        <div class="message__user-info">
+                                            <a href="#"class="message__user-name">Toàn Tôn</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="PC-music-player">
+                <div class="PC-music-player__navigation">
+                    <div class="btn btn-repeat">
+                        <i class="fas fa-redo"></i>
+                    </div>
+
+                    <div class="btn btn-prev">
+                        <i class="fas fa-backward"></i>
+                    </div>
+
+                    <div class="btn btn-toggle-play">
+                        <i class="fas fa-pause icon-pause"></i>
+                        <i class="fas fa-play icon-play"></i>
+                    </div>
+
+                    <div class="btn btn-next">
+                        <i class="fas fa-forward"></i>
+                    </div>
+
+                    <div class="btn btn-random">
+                        <i class="fas fa-random"></i>
+                    </div>
+
+                    <div class="btn btn-songs-menu">
+                        <i class="ti-menu-alt"></i>
+                        <div class="songs-menu">
+                            <div class="songs-menu__header">
+                                <h5>
+                                    List songs
+                                </h5>
+
+                                <span id="tablet-song-title" class="tablet-song-title hide-on-mobile"></span>
+                            </div>
+
+                            <ul class="songs-menu__container"></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="PC-music-player__current hide-on-mobile">
+                    <div class="PC-music-player__song hide-on-tablet">
+                        <p class="PC-music-player__song-title"></p>
+                    </div>
+
+                    <input id="music-progress" class="PC-music-player__progress" type="range" value="0" step="1" min="0" max="100">
+
+                    <div class="PC-music-player__song-time">
+                        <span class="PC-music-player__song-time-current"></span>
+                        <span> / </span>
+                        <span class="PC-music-player__song-time-total"></span>
+                    </div>
+                </div>
+            </div>
+            <audio id="audio" src=""></audio>
+        </div>
+
+        <!-- Form đăng kí -->
+        <div class="modal-signup">
+            <div class="modal__main">
+                <form action="" method="POST" class="form" id="form-1">
+                    <h3 class="heading">Sign Up</h3>
+                    <p class="desc">Be one of our member</p>
+                
+                    <div class="spacer"></div>
+                
+                    <div class="form-group">
+                    <label for="fullname" class="form-label">Full Name</label>
+                    <input id="fullname" name="fullname" type="text" placeholder="VD: Toàn Tôn" class="form-control">
+                    <span class="form-message"></span>
+                    </div>
+                
+                    <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
+                    <span class="form-message"></span>
+                    </div>
+                
+                    <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <input id="password" name="password" type="password" placeholder="Enter your password" class="form-control">
+                    <span class="form-message"></span>
+                    </div>
+                
+                    <div class="form-group">
+                    <label for="password_confirmation" class="form-label">Confirm Password</label>
+                    <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password" class="form-control">
+                    <span class="form-message"></span>
+                    </div>
+
+                    <div class="switch-form">
+                        <p>Already sign up ? 
+                            <a href="#">Login</a>
+                        </p>
+                    </div>
+        
+                    <button class="form-submit">Sign Up</button>
+
+                    <div class="form-exit">
+                        <i class="ti-close form-exit-icon"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Form đăng nhập -->
+        <div class="modal-login">
+            <div class="modal__main">
+                <form action="" method="POST" class="form" id="form-2">
+                    <h3 class="heading">Login</h3>
+                
+                    <div class="spacer"></div>
+                
+                    <div class="form-group">
+                    <input id="fullname" name="email" type="text" placeholder="Email" class="form-control">
+                    <span class="form-message"></span>
+                    </div>
+                
+                    <div class="form-group">
+                    <input id="email" name="password" type="password" placeholder="Password" class="form-control">
+                    <span class="form-message"></span>
+                    </div>
+
+                    <div class="forget-password">
+                        <a href="#" class="forget-password__link">Forget password ?</a>
+                    </div>
+
+                    <button class="form-submit">Login</button>
+            
+                    <div class="switch-form">
+                        <p>Not a member ? 
+                            <a href="#">Sign up</a>
+                        </p>
+                    </div>
+    
+                    <div class="form-exit">
+                        <i class="ti-close form-exit-icon"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Js process js-->
+    <script src="./assets/js/Main.js"></script>
+
+    <!-- import form Validation -->
+    <script src="./assets/js/Validation.js"></script>
+
+    <!-- Form modal js-->
+    <script src="./assets/js/Modal.js"></script>
+
+    <!-- Music Player JS -->
+    <script src="./assets/js/Music-player.js"></script>
+
+    <!-- Mobile Tabet JS -->
+    <script src="./assets/js/Mobile-tablet.js"></script>
+</body>
+</html>

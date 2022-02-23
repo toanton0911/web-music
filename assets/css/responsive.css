@@ -1,0 +1,194 @@
+/* Mobile and Tablet */
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    .main-body {
+        padding-left: 0;
+    }
+
+    .navbar {
+        padding-left: 15px;
+        --navbar-height: 80px;
+        width: 100vw;
+    }
+
+    .Mobile-tablet-sidebar__btn {
+        display: block;
+    }
+
+    .navbar__search {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        margin-right: 16px;
+    }
+
+    .navbar__search-input {
+        width: 100%;
+    }
+
+    .register__notification-info {
+        position: fixed;
+        top: var(--navbar-height);
+        left: 0;
+        width: 100%;
+    }
+
+    .discovery-songs__header {
+        margin-top: 37px;
+    }
+
+    .discovery-songs__item-img {
+        width: auto;
+    }
+
+    .new-songs__item-img {
+        width: auto;
+    }
+
+    .top-songs {
+        padding-left: 0;
+    }
+
+    .PC-music-player {
+        width: 100%;
+    }
+
+    .PC-music-player__navigation {
+        margin-right: 24px;
+    }
+
+    .songs-menu {
+        position: fixed;
+        width: 100%;
+        bottom: 48px;
+    }
+
+    .songs-menu__header {
+        height: 80px;
+        align-items: center;
+    }
+
+    .songs-menu__header h5 {
+        margin: 0 24px 0 0;
+    }
+
+    .tablet-song-title {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .PC-music-player__song-title {
+        min-width:auto;
+        overflow: visible;
+    }
+
+    .tablet-mobile-message  {
+        display: block;
+    }
+
+    /* .tablet__song {
+        display: flex;
+        align-items: center;
+    }
+
+    .tablet__song span {
+        font-size: 1.8rem;
+        margin-right: 8px;
+    } */
+
+    /* .songs-menu__header h5 {
+        margin: 0;
+    } */
+
+    /* .tablet-music-player__song {
+        display: flex;
+    }   */
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .PC-music-player__progress {
+        width: 200px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .Mobile-tablet-menu {
+        width: 60vw;
+    }
+
+    .mobile-register__login {
+        display: block;
+    }
+
+    .top-songs__header {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    .discovery-songs__header,
+    .new-songs__header,
+    .top-songs__header h3,
+    .MV__header,
+    .message__header {
+        text-align: center;
+    }
+
+    .MV-section {
+        margin-top: 60px;
+    }
+
+    .MV__container {
+        grid-template-columns: auto auto;
+        grid-template-rows:  auto auto;
+        /* grid-gap: 20px 16px; */
+    }
+
+    .MV__item {
+        height: 150px;
+    }
+
+    .MV__item-1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .MV__item-2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .PC-music-player {
+        padding-left: 32px;
+    }
+
+    .btn {
+        margin-right: 36px;
+    }
+
+    .btn-songs-menu {
+        margin-left: 0;
+    }
+
+    .PC-music-player__navigation {
+        flex: 1;
+        margin-right: 0;
+    }
+}
